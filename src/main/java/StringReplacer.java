@@ -14,4 +14,10 @@ public class StringReplacer implements StringTransformer {
         String changeText = input.getText().replace(text, change);
         input.setText(changeText);
     }
+
+    @Override
+    public void undo() {
+        String changeText = input.getText().replace(change, text);
+        input.setText(changeText);
+    }
 }

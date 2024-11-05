@@ -22,4 +22,8 @@ public class StringCaseChanger implements StringTransformer {
         // Update the input text with the transformed characters
         input.setText(new String(charArray));
     }
+    @Override
+    public void undo() {
+        execute();
+    }
 }

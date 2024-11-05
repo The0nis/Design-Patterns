@@ -6,10 +6,15 @@ public class StringInverter implements StringTransformer {
         this.input = input;
     }
 
-
+    @Override
     public void execute() {
         StringBuilder orignialText = new StringBuilder(input.getText());
         input.setText(orignialText.reverse().toString());
 
+    }
+
+    @Override
+    public void undo() {
+        execute();
     }
 }
