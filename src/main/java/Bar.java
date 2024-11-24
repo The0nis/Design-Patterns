@@ -14,7 +14,7 @@ public class Bar {
 
     ;
 
-    void endHappyHour() {
+    void  endHappyHour() {
     }
 
     ;
